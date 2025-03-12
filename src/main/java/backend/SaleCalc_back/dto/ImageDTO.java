@@ -5,17 +5,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
-import java.util.List;
-
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CommandDTO {
+public class ImageDTO {
     private Long id;
-    private double total;
-    private double clientPaid;
-    private double inChange;
-    private List<ProductDTO> products;
+    private String title;
+    private String description;
+    private byte[] data;
 }
