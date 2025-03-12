@@ -50,8 +50,8 @@ jobs:
           port: ${{ secrets.PROD_SERVER_PORT }}
           username: ${{ secrets.PROD_SERVER_USER }}
           password: ${{ secrets.PROD_SERVER_PASSWORD }}
-          target: /home/tipoutoupi/DEPLOY/salecal-back
-          source: target/SaleCalc-back-0.0.1-SNAPSHOT.jar
+          target: "/home/tipoutoupi/DEPLOY/salecal-back"
+          source: "target/SaleCalc-back-0.0.1-SNAPSHOT.jar"
 
       - name: Deploy via SSH
         uses: appleboy/ssh-action@master
