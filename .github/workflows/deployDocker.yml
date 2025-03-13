@@ -1,4 +1,4 @@
-name: deploy SaleCalc back JAVA
+name: deploy SaleCalc back JAVA Docker
 
 on:
   push:

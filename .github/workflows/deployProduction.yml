@@ -1,4 +1,4 @@
-name: deploy SaleCalc back JAVA
+name: deploy SaleCalc back JAVA Server
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
           path: target/SaleCalc-back-0.0.1-SNAPSHOT.jar
 
   deploy:
-    needs: docker
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
